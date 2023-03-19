@@ -32,7 +32,7 @@ The idea is to remove the `triage` label and adding some label like `enhancement
 
 ## Labels
 
-```
+```css
 #gh label list
 
 bug               Something isn't working                     #d73a4a
@@ -44,4 +44,14 @@ help wanted       Extra attention is needed                   #008672
 invalid           This doesn't seem right                     #e4e669
 question          Further information is requested            #d876e3
 wontfix           This will not be worked on                  #ffffff
+discussion        issue to move to a discussion               #BFD4F2
+triage                                                        #ededed
+
+```
+
+you can use `gh`to copy labels to other repository :
+
+```shell
+export TARGET_REPO=plantuml/YOUR_REPOSITORY
+gh label clone plantuml/template --force -R $TARGET_REPO
 ```
